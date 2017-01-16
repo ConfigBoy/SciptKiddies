@@ -12,7 +12,6 @@ $placeholder = 'Email';
 $rmvacc ='display:none;';
 $data_input_type = 'text';
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,6 +33,12 @@ $data_input_type = 'text';
     input {
       margin: 0 !important;
     }
+    input[type="text"], input[type="password"] {
+      max-width: 86%;
+      border: .1rem solid #BCBCBC;
+      padding: 0px 24px;
+      margin-bottom: 7px!important;
+  }
     .bottom-0 {
       margin-bottom: 0;
     }

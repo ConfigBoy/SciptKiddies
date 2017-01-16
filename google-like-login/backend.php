@@ -21,7 +21,7 @@ if (isset($_POST['login'])) {
 	if (isset($_POST['user'])) {
 		foreach ($user as $key => $value) {
 			# code...
-			if($value['username'] ==$_POST['user']){
+			if($value['username'] ==$_POST['user'] OR $value['email'] ==$_POST['user']){
 				$_SESSION['user'] = $value['username'];
 				$_SESSION['email'] = $value['email'];
 				$_SESSION['image'] = $value['image'];
